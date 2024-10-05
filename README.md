@@ -48,11 +48,14 @@ The system generates actionable insights for machine learning by evaluating user
 3. Rouge Score
 4. Jaccard Similarity
 
-## AUTHORS
+## Pipeline for the project:
 
-1. SIDDHANT JHA (MT23097)
-2. VANSHAJ SHARMA(MT23103)
-3. BHARAT NAGDEV (MT23029)	
-5. PULKIT RIHANI (MT23066)				
-6. LOKESH SAINI (MT23120)
-7. RITESH RAJPUT (MT23075)
+Steps involved over pipeline:
+1. User enter query
+2. Preprocessing of the user query
+3. Preprocessed query along with data is provided to BM25 to get the top 10 documents
+4. Using the RAG model (Vector DB) to index the document.
+5. Then the preprocessed query and indexed document are provided to the LLM.
+6. User gets the output.
+<img src="https://github.com/user-attachments/assets/b593b5b9-8590-4e85-b370-54914c299033" width="500">
+
